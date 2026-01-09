@@ -7,11 +7,12 @@
 KT0803K fm;
 GyverOLED<SSD1306_128x64> oled;
 
+
 void setup() {
     pinMode(A2, INPUT);
     pinMode(LED_BUILTIN, OUTPUT);
 
-    delay(1000); // Delayed startup because kt0803 has not yet woken up for the first time.
+    delay(1000);
 
     Wire.begin();
     fm.begin();
